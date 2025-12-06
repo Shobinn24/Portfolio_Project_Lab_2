@@ -1,0 +1,262 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Main Content Container */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    background-color: white;
+    margin: 30px 0;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #667eea;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: #764ba2;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* About Section */
+#about ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#about ul li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+#about ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #fafafa;
+}
+
+.project {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border-left: 5px solid #667eea;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.project ul li {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.project strong {
+    color: #667eea;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#contact ul li {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+#contact a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Media Query for Tablets and Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        padding: 50px 15px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1.1rem;
+    }
+    
+    /* Main content adjustments */
+    main {
+        padding: 10px;
+    }
+    
+    /* Section adjustments */
+    section {
+        padding: 25px 20px;
+        margin: 20px 0;
+    }
+    
+    section h2 {
+        font-size: 1.6rem;
+    }
+    
+    section h3 {
+        font-size: 1.3rem;
+    }
+    
+    section p {
+        font-size: 1rem;
+    }
+    
+    /* Project cards adjustments */
+    .project {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .project h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* About section list adjustments */
+    #about ul li {
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+    
+    /* Contact section adjustments */
+    #contact ul li {
+        font-size: 1rem;
+    }
+    
+    /* Footer adjustments */
+    footer {
+        padding: 15px;
+        margin-top: 30px;
+    }
+}
+
+/* Media Query for Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    section {
+        padding: 20px 15px;
+    }
+    
+    section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .project h3 {
+        font-size: 1.3rem;
+    }
+}
